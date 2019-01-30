@@ -14,11 +14,16 @@ public final class EnvUtils {
       case "FAT":
       case "FWS":
         return Env.FAT;
+      case "SIT":
+        return Env.SIT;
       case "UAT":
         return Env.UAT;
       case "PRO":
-      case "PROD": //just in case
         return Env.PRO;
+      case "PROD":
+        return Env.PROD;
+      case "TAG":
+        return Env.TAG;
       case "DEV":
         return Env.DEV;
       case "LOCAL":

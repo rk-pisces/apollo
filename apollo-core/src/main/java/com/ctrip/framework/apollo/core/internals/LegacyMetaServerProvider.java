@@ -36,6 +36,14 @@ public class LegacyMetaServerProvider implements MetaServerProvider {
         env.getProperty("lpt_meta", prop.getProperty("lpt.meta")));
     domains.put(Env.PRO,
         env.getProperty("pro_meta", prop.getProperty("pro.meta")));
+
+    // 新增SIT PROD TAG
+    domains.put(Env.SIT,
+            env.getProperty("sit_meta", prop.getProperty("sit.meta")));
+    domains.put(Env.PROD,
+            env.getProperty("prod_meta", prop.getProperty("prod.meta")));
+    domains.put(Env.TAG,
+            env.getProperty("prod_meta", prop.getProperty("tag.meta")));
   }
 
   @Override
